@@ -1,17 +1,32 @@
 $(document).ready(function(){
-    $('.gnb li').on('mouseover focusin', function(){
-      $(this).children('ul').stop().fadeIn(300);
+    var gnbdiv = $('.gnb > li > div');
+    var bg = $('.bg_gnb');
+    var li = $('gnb > li');
+
+    li.on('mouseover focusIn', function(){});
+    /*하위 메뉴 보이기 1. 각 메뉴에서 가장 높은 높이 구하기*/
+    
+    hig = 0;
+    gnbdiv.each(function(){
+        temp = parseInt($(this).outerHeight());
+        if( hig < temp ) { hig = temp; }
     });
-    $('.gnb li').on('mouseleave', function(){
-      $(this).children('ul').stop().fadeOut(200);
+
+    gnbdiv.show().css('height', hig);
+    bg.show().css('height', hig);
     });
-    $('.gnb').on('mouseover focusin', function(){
-      $('.bg_gnb').stop().fadeIn(300);
+    li.on('mouseleave', function(){});
+    /*하위 메뉴 감추기 */
+    hide_el();
+    $('.lang, h1').on('focusIn', function(){});
+    /*하위 메뉴 감추기 */
+    hide_el();
     });
-    $('.gnb').on('mouseleave focusout', function(){
-      $('.bg_gnb').stop().fadeOut(200);
-    });
-    $('.gnb > li').on('focusout', function(){
-      $(this).children('ul').stop().fadeOut(200);
-    });
+
+    /*하위 메뉴를 감추기 위한 함수 정의*/
+    function hide_el(){
+        gnbdiv.hide().removeAttr('style');
+        bg.hide().removeAttr('style');
+    }
+
   });
