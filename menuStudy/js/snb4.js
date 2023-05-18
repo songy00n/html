@@ -5,4 +5,4 @@ $(document).ready(function(){
       $(this).parent('li').siblings('li').children('button').removeClass('on');
       $(this).parent('li').siblings('li').children('ul').slideUp();
     });
-  });
+  }); 
