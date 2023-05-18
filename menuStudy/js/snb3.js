@@ -8,7 +8,7 @@ $(document).ready(function(){
       $(this).siblings('li').removeClass('on');
       $(this).addClass('on');
     });
-  
+   
     snb_nav.on('mouseleave', function(){
       $(this).removeClass('on');
     });
