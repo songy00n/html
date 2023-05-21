@@ -10,5 +10,5 @@ $(document).ready(function(){
     $('.lnb li:last a', function(){
         $('header nav, dim').fadeOut(300);
         $('.menu').focus();    
-    })
-})
+    });
+});
