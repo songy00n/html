@@ -6,7 +6,7 @@ HTML5, short for Hypertext Markup Language 5, is the latest version of the HTML 
 
 <i>Some key features and capabilities of HTML5 include:
 
-1. Semantic elements: HTML5 introduces new semantic elements that provide a clearer and more meaningful structure to web documents. These include elements such as <header>, <nav>, <article>, <section>, <footer>, and more. Semantic elements make it easier for search engines, screen readers, and developers to understand the purpose and hierarchy of different sections within a web page.
+1. Semantic elements: HTML5 introduces new semantic elements that provide a clearer and more meaningful structure to web documents. These include elements such as /<header>, <nav>, <article>, <section>, <footer>,/ and more. Semantic elements make it easier for search engines, screen readers, and developers to understand the purpose and hierarchy of different sections within a web page.
 
 2. Multimedia support: HTML5 includes native support for embedding and playing multimedia content without the need for third-party plugins, such as Adobe Flash. The <video> and <audio> elements allow developers to embed video and audio content directly into web pages, providing better cross-platform compatibility and improved performance.
 
